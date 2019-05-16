@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Kempton English</title>
+  <link rel="stylesheet" href="KemptonPhrasalVerbs.css">
+  <!-- <link rel="stylesheet" href="main.css"> -->
+<!-- onclick="toggle() -->
+</head>
+<body>
+  <header>
+    <h1 id="headerHeading">Kempton Academy</h1>    
+    <nav id="headerNav">
+      <label for="toggle" id="toggle">&#9776;</label>
+      <ul class="ulNav">
+        <li><a href="file:///C:/Users/Gary/Desktop/KemptonEnglish/KemptonPhrasalVerbs.html" class="current">Home</a></li>
+        <li><a href="file:///C:/Users/Gary/Desktop/KemptonEnglish/mpv.html">MPV book</a></li>
+        <li><a href="file:///C:/Users/Gary/Desktop/KemptonEnglish/about.html">About Me</a></li>
+        <li><a href="file:///C:/Users/Gary/Desktop/KemptonEnglish/testYourself.html">Test Yourself</a></li>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="file:///C:/Users/Gary/Desktop/KemptonEnglish/testimonials.html">Testimonials</a></li>
+      </ul>   
+    </nav>
+  </header>
+
+  <main class="galleryContainer">
+  	<div class="slideshowContainer">
+
+  		<button class="leftArrow" onclick="plusSlides(-1)">&#10094;</button>
+  		<button class="rightArrow" onclick="plusSlides(+1)">&#10095;</button>
+  		
+        <div class="titleHolder" onmouseover="pauseDivs()" onmouseout='playDivs()'>
+        	<h1 class="titleText"></h1>
+    	  </div>
+        <div class="captionHolder" onmouseover="pauseDivs()" onmouseout='playDivs()'>
+        	<p class="captionText"></p>
+    	  </div>
+
+   <!--the image slideshow--> 
+		  <div class="imageHolder" onmouseover="pauseDivs()" onmouseout='playDivs()'>
+  			<img src="../KemptonEnglish/siteImages/cafe.jpg">
+  				<div><a href="#" class="mpvBk">Mastering Phrasal Verbs Like a Native English Speaker Vol 1 <p id="clickMe">Click me</p></a></div>
+  			<h1 class="titleText" id="socializing">Phrasal verbs for socializing with friends</h1>
+  			<p class="captionText" id="coffeeChat">Have a chat over coffee</p>
+  		</div>
+         
+  		<div class="imageHolder" onmouseover="pauseDivs()" onmouseout='playDivs()'>
+  			<img src="../KemptonEnglish/siteImages/blueSky.JPG">
+  				<div><a href="#" class="mpvBk">Mastering Phrasal Verbs Like a Native English Speaker Vol 1 <p id="clickMe">Click me</p></a></div>
+  			<h1 class="titleText" id="easy">The natural easy way to learn</h1>
+  			<p class="captionText" id="noPressure">Learning without stress or pressure</p>
+  		</div>
+
+  		<div class="imageHolder" onmouseover="pauseDivs()" onmouseout='playDivs()'>
+  			<img src="../KemptonEnglish/siteImages/oldBridge.JPG">
+  				<div><a href="#" class="mpvBk">Mastering Phrasal Verbs Like a Native English Speaker Vol 1 <p id="clickMe">Click me</p></a></div>
+  			<h1 class="titleText" id="walk">Helps build bridges</h1>
+  			<p class="captionText" id="calm">Connect with others</p>
+  		</div>
+
+  		<div class="imageHolder" onmouseover="pauseDivs()" onmouseout='playDivs()'>
+  			<img src="../KemptonEnglish/siteImages/city.jpg">
+  				<div><a href="#" class="mpvBk">Mastering Phrasal Verbs Like a Native English Speaker Vol 1 <p id="clickMe">Click me</p></a></div>
+  			<h1 class="titleText" id="bigCity">For the big city</h1>
+  			<p class="captionText" id="business">For all those important business activities you participate in</p>
+  		</div>
+
+  		<div class="imageHolder" onmouseover="pauseDivs()" onmouseout='playDivs()'>
+  			<img src="../KemptonEnglish/siteImages/onTheGo.jpg">
+  				<div><a href="#" class="mpvBk">Mastering Phrasal Verbs Like a Native English Speaker Vol 1 <p id="clickMe">Click me</p></a></div>
+  			<h1 class="titleText" id="onTheGo">On the Go</h1>
+  			<p class="captionText">They're with you everywhere.</p>
+  		</div>
+  	</div>
+
+    <div id="dotsContainer">
+    	<button class="dots" onclick="moveSlide(0)"></button>   
+    	<button class="dots" onclick="moveSlide(1)"></button>   
+    	<button class="dots" onclick="moveSlide(2)"></button>   
+    	<button class="dots" onclick="moveSlide(3)"></button> 
+    	<button class="dots" onclick="moveSlide(4)"></button>
+    </div>
+
+  
+<footer>
+	<ul>
+		<li>KPV</li>
+		<li><a href="file:///C:/Users/Gary/Desktop/KemptonEnglish/mpv.html">Mastering Phrasal Verbs Like a Native English Speaker Vol 1</a></li>
+		<li><a href="#">Home</a></li>
+    <li><a href="file:///C:/Users/Gary/Desktop/KemptonEnglish/about.html">About Me</a></li>
+		<li><a href="file:///C:/Users/Gary/Desktop/KemptonEnglish/disclaimer.html">Disclaimer</a></li>
+    <li><a href="file:///C:/Users/Gary/Desktop/KemptonEnglish/testYourself.html">Test Yourself</a></li>
+		<li><a href="file:///C:/Users/Gary/Desktop/KemptonEnglish/testimonials.html">Testimonials</a></li>
+	</ul>
+</footer>
+</main>
+  <!-- JAVASCRIPT STARTS HERE -->
+<script src="KemptonPhrasalVerbs.js"></script>
+</body>
+</html>

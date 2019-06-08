@@ -1,8 +1,10 @@
 //code for the toggle button
-let navBar;     
+var navBar;     
     navBar = document.getElementsByTagName('nav');
+    // navBar = document.querySelector('#nav');
 
-let toggle = document.getElementById("toggle");
+// var toggle = document.getElementById("toggle");
+var toggle = document.querySelector('#toggle');
 toggle.addEventListener('click', function(){ 
       if(navBar[0].className == ''){
         navBar[0].className = ' show ';
@@ -11,46 +13,48 @@ toggle.addEventListener('click', function(){
       }
 });
 
-    var dots,slideIndex,slides,captionText,titleText;
+    var dots, slideIndex, slides, captionText, titleText;
 
 function initgallery(){
-      slideIndex=0;
-      slides = document.getElementsByClassName('imageHolder');
-     captionText=document.querySelector('.captionHolder  .captionText');
-     captionText.innerHTML=slides[slideIndex].querySelector('.captionText').innerText;
+    slideIndex = 0;
+    slides = document.getElementsByClassName('imageHolder');
+    captionText = document.querySelector('.captionHolder  .captionText');
+    captionText.innerHTML = slides[slideIndex].querySelector('.captionText').innerText;
 
-     titleText=document.querySelector('.titleHolder  .titleText');
-     titleText.innerHTML=slides[slideIndex].querySelector('.titleText').innerText;
+    titleText = document.querySelector('.titleHolder  .titleText');
+    titleText.innerHTML = slides[slideIndex].querySelector('.titleText').innerText;
 
+    dots = document.getElementsByClassName('dots');
+    // dots = document.querySelector('.dots');
+    slides[slideIndex].style.opacity = 1; 
+    dots[slideIndex].className += ' active ';    
+  }
+initgallery();
 
-      dots = document.getElementsByClassName('dots');
-      slides[slideIndex].style.opacity = 1; 
-      dots[slideIndex].className +=' active ';    
-    
-    }
-  initgallery();
-  function plusSlides(n){
-moveSlide(slideIndex+n);
+function plusSlides(n){
+moveSlide(slideIndex + n);
   }
   
-   function moveSlide(n){
-    var i,current,next;
-    var moveSlideAnimClass={
-      forCurrent:'',
-      forNext:'',
-    } 
-  var slideTextAnimClass;
-    var slideTitleAnimClass;
+function moveSlide(n){
+  var i, current, next;
+  var moveSlideAnimClass = {
+    forCurrent:'',
+    forNext:'',
+  } 
+var slideTextAnimClass;
+var slideTitleAnimClass;
 
-    if(n>slideIndex){
-      if(n >= slides.length){n = 0};
-       moveSlideAnimClass.forCurrent ='moveLeftCurrentSlide';
-       moveSlideAnimClass.forNext ='moveLeftNextSlide';
-       slideTextAnimClass ='slideTextFromTop';
-       slideTitleAnimClass= 'slideTitleFromTop';
+  if(n > slideIndex){
+    if(n >= slides.length){
+      n = 0
+    };
+    moveSlideAnimClass.forCurrent = 'moveLeftCurrentSlide';
+    moveSlideAnimClass.forNext = 'moveLeftNextSlide';
+    slideTextAnimClass = 'slideTextFromTop';
+    slideTitleAnimClass = 'slideTitleFromTop';
 
-    }else if(n<slideIndex){
-      if(n<0){n=slides.length-1}
+    }else if(n < slideIndex){
+      if(n < 0){n = slides.length-1}
       moveSlideAnimClass.forCurrent ='moveRightCurrentSlide';
        moveSlideAnimClass.forNext ='moveRightNextSlide';
        slideTextAnimClass='slideTextFromTop';
@@ -59,7 +63,7 @@ moveSlide(slideIndex+n);
           if(n != slideIndex){
                   next=slides[n];
                     current = slides[slideIndex];
-                     for(var i = 0; i<slides.length; i++){
+                     for(var i = 0; i < slides.length; i++){
                       slides[i].className='imageHolder';
                       slides[i].style.opacity = 0;
                       dots[i].className = dots[i].className.replace(' active ','');
@@ -75,29 +79,20 @@ moveSlide(slideIndex+n);
           captionText.innerText = slides[n].querySelector('.captionText').innerText;
           captionText.style.display ='block';
 
-
-
           titleText.style.display='none';
           titleText.className ='titleText ' + ' slideTitleFromTop ';
           titleText.innerText = slides[n].querySelector('.titleText').innerText;
           titleText.style.display ='block';
-
-
-
-
-
   }
  
  var timer= null;
    function setTimer(){
-      timer=setInterval(function(){
+      timer = setInterval(function(){
          plusSlides(1);
-
-       },5000)
+       }, 5000)
    }
  
 setTimer();
-
 
 function playDivs(){
   if(timer==null){
@@ -107,9 +102,9 @@ function playDivs(){
 }
 
 function pauseDivs(){
-if (timer!=null){
+if (timer != null){
    clearInterval(timer);
-   timer=null; 
+   timer = null; 
   }
 }
     //  function toggle(){ 

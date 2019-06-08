@@ -1,0 +1,1069 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+}
+.cf:before, .cf:after {
+	display: table;
+	content: "";
+}
+.cf:after {
+	clear: both;
+}
+html {
+	background-color: lightgrey;
+}
+body{
+	width: 100%;
+	margin: 0 auto;
+	/*background-color: #2b7464;*/
+}
+header {
+	width: 100%;
+	height: 3em;
+	background-color: blue;
+}
+header h1 {
+	float: left;
+	width: 20%;
+	color: white;
+	margin-top: .2em;
+	margin-left: 4%;
+}
+#headerNav {
+	float: left;
+	margin-left: 15%;
+	margin-top: .8em;
+	width: 60%;
+}
+#toggle, label {
+	display: none;
+}
+.ulNav li{
+	float: left;
+	font-size: 1.3em;
+	margin-right: 5%;
+	height: 1.5em;
+}
+.ulNav li a {
+	color: white;
+}
+.ulNav li a:hover {
+	color: #e6ecf2;
+	border-bottom: 1px solid black;
+}
+.current {
+	background-color: #13293d;
+	text-decoration: underline;
+}
+article {
+	/*height: 80vh;*/
+	margin-top: 3em;
+}
+#me {
+	padding: 3em auto;
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+#intro {
+	font-size: 1.8em;
+	text-align: center;
+	margin-bottom: 1em;
+}
+#audio {
+	text-align: center;
+	margin-bottom: 4em;
+}
+p {
+	font-size: 1.4em;
+}
+h3 {
+	font-size: 1.5em;
+}
+.onlineTeacher, .materials {
+	margin-left: 2em;
+	margin-bottom: 2em;
+	margin-right: 2em;
+	width: 45%;
+	float: left;
+}
+.test {
+	clear: both;
+}
+.test, .web {
+	float: left;
+	margin: .5em 2em 3em 2em;
+	width: 45%;
+	color: black;
+}
+.companiesTaught h3 {
+	clear: both;
+	font-size: 1.5em;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 1em;
+}
+#companiesList1, #companiesList2{
+	border: 1px solid black;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	width: 40%;
+	margin-left: 6%;
+	margin-right: 2%;
+	margin-bottom: 3em;
+	float: left;
+	border-radius: 5%;
+	line-height: 1.2em;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+/*FOOTER*/
+footer { 
+	clear: both;
+	margin-top: 6em;
+	background-color: blue;
+}
+footer ul {
+	margin-top: .5em;
+	margin-left: 0;
+}
+footer ul li {
+	float: left;
+	margin-top: .5em;
+	margin-bottom: .5em;
+	margin-left: 2%;
+	font-size: 1.4em;
+	color: white;
+}
+footer ul li:nth-child(1) {
+	border: 1px solid white;
+	margin-left: 3%;
+}
+footer ul li:nth-child(2) {
+	margin-left: 3%;
+}
+footer ul li a {
+	color: white;
+}
+footer ul li a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+/*MEDIA QUERY  -  LAPTOP*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+header {
+	background-color: red;
+	height: 3em;
+}
+header h1 {
+	float: left;
+	width: 27%;
+	margin-top: .2em;
+	color: white;
+	margin-left: 2%;
+}
+#headerNav {
+	margin-left: 2%;
+	margin-top: .8em;
+	width: 69%;
+}
+.ulNav li{
+	margin-right: 4%;
+}
+.ulNav li:nth-child(5) {
+	margin-right: 3%;
+}
+article {
+	margin-top: 3em;
+}
+#intro {
+	font-size: 1.8em;
+	margin-left: 0;
+	text-align: center;
+	margin-bottom: .5em;
+}
+#me {
+	width: 90%;
+	text-align: center;
+	margin-left: 5%;
+	margin-bottom: 1em;
+}
+#audio {
+	margin-left: 0;
+	margin-top: 2em;
+	text-align: center;
+}
+p {
+	text-align: center;
+	font-size: 1.2em;
+	float: none;
+	margin-left: 5%;
+}
+h3 {
+	text-align: center;
+	margin-top: 1.2em;
+	margin-bottom: .5em;
+	font-size: 2em;
+	margin-left: 5%;
+}
+.onlineTeacher, .materials {
+	float: left;
+	margin-left: 2%;
+	margin-right: 2%;
+	font-size: 1.15em;
+	width: 45%;
+}
+.test, .web {
+	float: left;
+	margin-left: 2%;
+	margin-right: 2%;
+	font-size: 1.15em;
+	width: 45%;
+}
+#companiesList1, #companiesList2{
+	border: 1px solid black;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	width: 40%;
+	margin-left: 6%;
+	margin-right: 2%;
+	margin-bottom: 3em;
+	float: left;
+	border-radius: 5%;
+	line-height: 1.2em;
+	text-align: center;
+	font-size: 1.2em;
+}
+/*FOOTER*/
+footer { 
+	/*margin-top: 6em;*/
+	height: 6em;
+	background-color: blue;
+}
+footer ul li {
+	font-size: 1.2em;
+	margin: .3em 3% .2em;
+}
+footer ul li:nth-child(1) {
+	margin-left: 5%;
+	margin-top: .5em;
+	margin-right: 0;
+	font-size: 1.3em;
+	color: white;
+	border: 1px solid white;
+}
+footer ul li:nth-child(2) {
+	margin-top: .5em;
+	margin-left: 15%;
+	font-size: 1.3em;
+}
+footer ul li:nth-child(3) {
+	clear: both;
+	margin-left: 15%;
+}
+footer ul li a {
+	color: white;
+}
+footer ul li a:hover {
+	text-decoration: underline;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERY  -  TABLET*/
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+header {
+	background-color: green;
+	height: 8em;
+}
+header h1 {
+	float: none;
+	width: 100%;
+	margin-top: 0;
+	height: 3em;
+	padding-top: .5em;
+	text-align: center;
+	color: white;
+	margin-left: 0;
+}
+#toggle {
+	float: right;
+	display: block;
+	cursor: pointer;
+	padding: .7em 0;
+	z-index: 1;
+	margin-top: 0;
+	margin-right: 2em;	
+}
+#headerNav {
+	margin-left: 0;
+	width: 100%;
+	background-color: orange;
+	height: 19em;
+	max-height: 3em;
+	margin-top: 0;
+	overflow: hidden;	
+	transition: max-height 1s ease;
+	-webkit-transition: max-height 1s ease;
+	-moz-transition: max-height 1s ease;
+	-o-transition: max-height 1s ease;
+	-ms-transition: max-height 1s ease;	
+}
+#headerNav.show{
+	max-height: 13em;
+	background-color: orange;
+}
+.ulNav {
+	margin-top: 3em;
+	margin-right: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: brown;	
+}
+.ulNav li{
+	float: left;
+	width: 49.7%;
+	margin: 0;
+	background-color: red;
+	border-top: .25px solid black;
+	border-left: .25px solid black;
+	height: 2.5em;
+}
+.ulNav li a {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding-top: .4em;
+	padding-bottom: .5em;
+	height: 2.2em;
+}
+.ulNav li a:hover {
+	color: #e6ecf2;
+	border-bottom: none;
+}
+#me {
+	padding: 3em auto;
+	text-align: center;
+	font-size: 2em;
+	margin-top: 1.5em;
+	margin-bottom: 2em;
+}
+#intro {
+	font-size: 1.8em;
+	text-align: center;
+	margin-bottom: 1em;
+	margin-left: 0;
+}
+#audio {
+	margin-left: 0;
+	margin-bottom: 2em;
+	text-align: center;
+}
+p {
+	text-align: center;
+	font-size: 1.2em;
+	float: none;
+	margin-left: 5%;
+}
+h3 {
+	text-align: center;
+	margin-top: 1.2em;
+	margin-bottom: .5em;
+	font-size: 2em;
+	margin-left: 5%;
+}
+.onlineTeacher, .materials, .test, .web {
+	margin-top: 4em;
+	margin-left: 0;
+	margin-bottom: 2em;
+	width: 90%;
+	float: none;
+	text-align: center;
+	font-size: 1.1em;
+}
+.materials {
+	background-image: url("../kemptonEnglish/siteImages/notebook.jpg" alt="using notebook") no-repeat cover;
+}
+.companiesTaught h3 {
+	font-size: 1.5em;
+	margin: 0 auto;
+	text-align: center;
+	width: 90%;
+	margin-top: 3em;
+	margin-bottom: 1em;
+}
+
+/*FOOTER*/
+footer {
+	height: 6em;
+}
+footer ul {
+	clear: both;
+	margin-top: -.8em;
+	margin-left: 0;
+}
+footer ul li {
+	margin: .3em 3%;
+	font-size: 1.2em;
+}
+footer ul li:nth-child(1) {
+	margin-top: 1em;
+	margin-right: 0%;
+	margin-left: 10%;
+}
+footer ul li:nth-child(2) {
+	margin-top: .8em;
+	margin-left: 8%;
+	font-size: 1.2em;
+}
+footer ul li:nth-child(3) {
+	clear: both;
+	margin-left: 10%;
+}
+footer ul li:nth-child(4){
+	margin-left: 5%;
+}
+footer ul li a {
+	color: white;
+}
+footer ul li a:hover {
+	text-decoration: underline;
+}
+}
+
+
+
+
+
+
+
+
+
+
+/*mobile large*/
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+header {
+	background-color: purple;
+	height: 8em;
+}
+header h1 {
+	float: none;	
+	width: 100%;
+	height: 3em;
+	margin-top: 0;
+	padding-top: .5em;
+	text-align: center;
+	color: white;
+	margin-left: 0;
+}
+#toggle {
+	display: block;
+	cursor: pointer;
+	padding: .7em 0;
+	z-index: 1;
+	margin-top: 0;
+	margin-right: 2em;	
+	float: right;
+}
+#headerNav {
+	margin-left: 0;
+	width: 100%;
+	background-color: orange;
+	height: 11.05em;
+	max-height: 3em;
+	margin-top: 0;
+	overflow: hidden;	
+	transition: max-height 1s ease;
+	-webkit-transition: max-height 1s ease;
+	-moz-transition: max-height 1s ease;
+	-o-transition: max-height 1s ease;
+	-ms-transition: max-height 1s ease;	
+}
+#headerNav.show{
+	max-height: 11.05em;
+	background-color: orange;
+}
+.ulNav {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: brown;
+	margin-top: 3em;	
+}
+.ulNav li{
+	float: left;
+	width: 49.6%;
+	margin: 0;
+	margin-top: 0;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	height: 2em;
+}
+.ulNav li:nth-child(1){
+	width: 49.6%;
+	margin-right: 0;
+	border-top: 1px solid black;
+	/*I added this one*/
+}
+.ulNav li:nth-child(2){
+	margin-left: 0;
+	width: 49.6%;
+	border-top: 1px solid black;
+}
+.ulNav li:nth-child(3){
+	width: 49.6%;
+}
+.ulNav li:nth-child(5){
+	width: 49.6%;
+}
+.ulNav li a {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding-top: .4em;
+	padding-bottom: .45em;
+	/*I changed this one*/
+}
+.ulNav li a:hover {
+	color: #e6ecf2;
+	border-bottom: none;
+}
+article {
+/*	height: 220vh;*/
+	margin-top: 2em;
+}
+#me {
+	margin: 2em auto;
+	width: 90%;
+	padding: 5em auto;
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+#intro {
+	font-size: 1.8em;
+	text-align: center;
+	margin-left: 0;
+	margin-bottom: .5em;
+}
+#audio {
+	margin-top: 4em;
+	margin-left: 0;
+	margin-bottom: 2em;
+	text-align: center;
+}
+p {
+	text-align: center;
+	font-size: 1.2em;
+	float: none;
+	margin-left: 5%;
+}
+h3 {
+	text-align: center;
+	margin-top: 1.2em;
+	margin-bottom: .5em;
+	font-size: 2em;
+	margin-left: 5%;
+}
+.onlineTeacher, .materials, .test, .web {
+	margin-left: 0;
+	width: 90%;
+	float: none;
+	text-align: center;
+	font-size: 1.1em;
+	margin-left: 2%;
+	margin-bottom: 2em;
+}
+.companiesTaught {
+	width: 100%;
+}
+.companiesTaught h3 {
+	clear: both;
+	font-size: 1.3em;
+	text-align: center;
+	width: 100%;
+	margin-top: 2em;
+}
+#companiesList1, #companiesList2{
+	border: 1px solid black;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 0;
+	margin-bottom: 3em;
+	float: none;
+	border-radius: 5%;
+	line-height: 1.2em;
+	text-align: center;
+	font-size: 1.2em;
+}
+/*FOOTER*/
+footer { 
+	height: 10em;
+	line-height: 1em;
+	margin-top: 3em;
+	margin-bottom: 1.2em;
+}
+footer ul {
+	margin-top: 0;
+	margin-left: 0;
+}
+footer ul li {
+	margin: .5em 3% .3em 6%;
+	font-size: 1.1em;
+}
+footer ul li:nth-child(1) {
+	margin-top: 1em;
+	margin-left: 45%;
+}
+footer ul li:nth-child(2) {
+	text-align: center;
+	line-height: 1.1em;
+}
+footer ul li:nth-child(3) {
+	margin-left: 15%;
+}
+footer ul li:nth-child(6) {
+	margin-left: 18%;
+}
+footer ul li:nth-child(7) {
+	margin-left: 10%;
+}
+footer ul li a {
+	color: white;
+}
+footer ul li a:hover {
+	text-decoration: underline;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*mobile medium*/
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+header {
+	height: 8em;
+	background-color: lightblue;
+}
+header h1 {
+	float: none;
+	width: 100%;
+	height: 3em;
+	padding-top: .5em;
+	text-align: center;
+	margin-top: 0;
+	margin-left: 0;
+}
+#toggle {
+	display: block;
+	cursor: pointer;
+	padding: .7em 0;
+	z-index: 1;
+	margin-top: 0;
+	margin-right: 2em;	
+	float: right;
+}
+#headerNav {
+	margin-left: 0;
+	width: 100%;
+	background-color: pink;
+	height: 19em;
+	max-height: 3em;
+	margin-top: 0;
+	overflow: hidden;	
+	transition: max-height 1s ease;
+	-webkit-transition: max-height 1s ease;
+	-moz-transition: max-height 1s ease;
+	-o-transition: max-height 1s ease;
+	-ms-transition: max-height 1s ease;	
+}
+#headerNav.show{
+	max-height: 18.65em;
+	background-color: orange;
+}
+.ulNav {
+	display: block;
+	width: 80%;
+	height: 100%;
+	margin-top: 3em;	
+}
+.ulNav li{
+	float: none;
+	width: 100%;
+	margin: 0;
+	height: 2em;
+}
+.ulNav li:nth-child(1){
+	width: 100%;
+	margin: 0;
+	background-color: red;
+}
+.ulNav li a {
+	padding: .4em 2em;
+	width: 100%;
+	display: block;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+    background-color: grey;
+	color: white;
+	text-align: center;
+}
+.ulNav li:nth-child(2){
+	margin: 0;
+	width: 100%;
+}
+.ulNav li:nth-child(3){
+	width: 100%;
+}
+.ulNav li:nth-child(5){
+	width: 100%;
+}
+article {
+	margin-top: 3em;
+}
+#me {
+	padding: 3em auto;
+	margin-top: 2em;
+	margin-left: 5%;
+	width: 90%;
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 2em;
+}
+#intro {
+	font-size: 1.8em;
+	text-align: center;
+	margin-left: 0;
+	margin-bottom: 1em;
+}
+#audio {
+	margin-left: 0;
+	text-align: center;
+	margin-bottom: 2em;
+}
+p {
+	text-align: center;
+	font-size: 1.2em;
+	float: none;
+	margin-left: 5%;
+}
+h3 {
+	text-align: center;
+	margin-top: 1.2em;
+	margin-bottom: .5em;
+	font-size: 2em;
+	margin-left: 5%;
+}
+.onlineTeacher, .materials, .test, .web {
+	margin-left: 0;
+	width: 90%;
+	float: none;
+	text-align: center;
+	font-size: 1.1em;
+	margin-left: 2%;
+	margin-bottom: 2em;
+}
+.companiesTaught h3 {
+	font-size: 1.3em;
+	text-align: center;
+	width: 100%;
+	margin-top: 2em;
+}
+#companiesList1, #companiesList2{
+	border: 1px solid black;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 0;
+	margin-bottom: 3em;
+	float: none;
+	border-radius: 5%;
+	line-height: 1.2em;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+/*FOOTER*/
+footer { 
+	height: 9em;
+	margin-top: 0;
+	background-color: blue;
+}
+footer ul {
+	margin-left: 0;
+	margin-top: 0;
+}
+footer ul li {
+	font-size: 1.1em;
+	margin-top: .5em;
+	margin-left: 6%;
+	margin-bottom: 0;
+}
+footer ul li:nth-child(1) {
+	border: 1px solid white;
+	color: white;
+	margin-top: .5em;
+	margin-bottom: .3em;
+	margin-left: 45%;
+}
+footer ul li:nth-child(2) {
+	text-align: center;
+	margin-top: .4em;
+	margin-bottom: 0;
+	margin-left: 0;
+	line-height: 1.1em;
+}
+footer ul li:nth-child(3) {
+	margin-left: 15%;
+}
+footer ul li:nth-child(6) {
+	margin-left: 18%;
+}
+footer ul li:nth-child(7) {
+	margin-left: 10%;
+}
+footer ul li a {
+	color: white;
+}
+footer ul li a:hover {
+	text-decoration: underline;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*mobile - small*/
+@media only screen and (min-width: 20px) and (max-width: 320px) {
+header {
+	height: 8em;
+	background-color: red;
+}
+header h1 {
+	float: none;
+	width: 100%;
+	height: 3em;
+	padding-top: .5em;
+	margin-top: 0;
+	text-align: center;
+	margin-left: 0;
+}
+#headerNav {
+	margin-left: 0;
+	width: 100%;
+	background-color: brown;
+	height: 19em;
+	max-height: 3em;
+	margin-top: 0em;
+	overflow: hidden;	
+	transition: max-height 1s ease;
+	-webkit-transition: max-height 1s ease;
+	-moz-transition: max-height 1s ease;
+	-o-transition: max-height 1s ease;
+	-ms-transition: max-height 1s ease;	
+}
+#headerNav.show{
+	max-height: 18.65em;
+	background-color: orange;
+}
+#toggle {
+	display: block;
+	cursor: pointer;
+	padding: .7em 0;
+	z-index: 10;
+	margin-top: 0;
+	margin-right: 2em;	
+	float: right;
+}	
+.ulNav {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin-top: 3em;	
+}
+.ulNav li{
+	float: left;
+	width: 100%;
+	margin-top: 0;
+	height: 2em;
+}
+.ulNav li a {
+	padding: .4em 2em;
+	display: block;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+    background-color: grey;
+	color: white;
+	text-align: center;
+}
+.ulNav li a:hover {
+	background color: #8e979f;
+	color: #0c2032;
+}
+.ulNav li:nth-child(1){
+	width: 100%;
+}
+.ulNav li:nth-child(2){
+	width: 100%;
+	margin: 0;
+}
+.ulNav li:nth-child(3){
+	width: 100%;
+ó}
+.ulNav li:nth-child(4) {
+	background-color:grey;
+	width: 100%;
+}
+article {
+	margin-top: 3em;
+}
+#me {
+	padding: 3em auto;
+	margin-left: 5%;
+	width: 90%;
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+#intro {
+	font-size: 1.8em;
+	text-align: center;
+	margin-top: 2em;
+	margin-left: 0;
+	margin-bottom: 1em;
+}
+#audio {
+	margin-left: 0;
+	margin-bottom: 2em;
+}
+p {
+	text-align: center;
+	font-size: 1.2em;
+	float: none;
+	margin-left: 5%;
+}
+h3 {
+	text-align: center;
+	margin-left: 5%;
+	margin-top: 1.2em;
+	margin-bottom: .5em;
+	font-size: 2em;
+}
+.onlineTeacher, .materials {
+	margin-left: 0;
+	width: 90%;
+	float: none;
+	margin-bottom: 4em;
+}
+.test, .web {
+	margin-left: 0;
+	width: 90%;
+	float: none;
+	margin-bottom: 4em;
+}
+.companiesTaught {
+	width: 100%;
+}
+.companiesTaught h3 {
+	clear: both;
+	font-size: 1.3em;
+	text-align: center;
+	width: 90%;
+	margin-top: 2em;
+}
+#companiesList1, #companiesList2{
+	border: 1px solid black;
+	padding: 1em 2% 1em 2%;
+	width: 90%;
+	margin-left: 2.5%;
+	margin-right: 0;
+	margin-bottom: 3em;
+	float: none;
+	border-radius: 5%;
+	line-height: 1.2em;
+	text-align: center;
+	font-size: 1.2em;
+}
+/*FOOTER*/
+footer { 
+	height: 10em;
+	margin-top: 1em;
+	background-color: blue;
+}
+footer ul li {
+	font-size: 1.1em;
+	margin-top: .2em;
+	margin-left: 5%;
+	margin-bottom: 0.2em;
+}
+footer ul li:nth-child(1) {
+	margin-top: .2em;
+	font-size: 1.2em;
+	margin-left: 42%;
+	text-align: center;
+}
+footer ul li:nth-child(2) {
+	margin-left: 2%;
+	text-align: center;
+}
+footer ul li:nth-child(3) {
+	margin-left: 12%;
+}
+footer ul li:nth-child(6){
+	margin-left: 12%;
+}
+footer ul li:nth-child(7) {
+	margin-left: 12%;
+}
+footer ul li a {
+	color: white;
+}
+footer ul li a:hover {
+	text-decoration: underline;
+}
+}
